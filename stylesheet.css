@@ -1,0 +1,327 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(images/imageback.gif);
+        font-family: "Trirong", serif;
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .header {
+        overflow: hidden;
+        background-color: #79adc5;
+        min-height: auto;
+        padding: 30px 5px;
+        text-align: center;
+        /* background: #3b5264; */
+        background: #7e6be7;
+        color: solid rgb(255, 255, 255);
+        padding-top: 1px;
+        padding-bottom: 2px;
+        display: flex;
+       justify-content: left;
+        
+    }
+    
+    .header img.logo {
+        font-size: 25px;
+        font-weight: bold;
+        max-width: 10%;
+        border-radius: 50%;
+        justify-content: left;
+    }
+    
+    .header img:hover {
+        transform: scale(0.5);
+    }
+    
+    .header h1 {
+        float: right;
+        align-items: center;
+        text-align: left;
+        padding: 13px;
+        text-decoration: solid rgb(255, 255, 255);
+        font-size: 40px;
+        line-height: 25px;
+        font-weight: bold;
+        border-radius: 0%;
+        box-sizing: border-box;
+        text-shadow: 3px 3px 4px #aa0000;
+        color: #ffffff;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .column {
+        width: 400px;
+        height: auto;
+        padding: 5px;
+        display: inline-block;
+        margin: 0 1% 0 1%;
+        text-align: center;
+    }
+    
+    .row {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        display: inline-block;
+        margin: 0 1% 0 1%;
+        text-align: center;
+    }
+
+    .section h1 {
+        float: center;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    
+    .section ul {
+        float: center;
+        text-align: justify;
+        color: white;
+    }
+    
+    .section p {
+        float: center;
+        text-align: center;
+        color: white;
+    }
+    
+    .section h3 {
+        float: center;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 3px 3px 4px #aa0000;
+    }
+    
+    .navbar {
+        width: 100%;
+        background: linear-gradient(to right, #274874,#5ba6be);
+        overflow: auto;
+        position: sticky;
+        top: 0;
+        display: flex;
+        text-align: justify;
+    }
+    
+    .navbar a {
+        float: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+        font-style: inherit;
+        font-feature-settings: "vrt2";
+        font-weight: bold;
+        position: sticky;
+        color: #ffffff;
+    }
+    
+    .navbar a:hover {
+        background-color: #7e6be7;;
+    }
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    
+        
+    .socialicons {
+        text-align: center;
+        width: auto;
+        height: 100%;
+        padding: 50px;
+    }
+    
+    .socialicons img {
+        width: 100px;
+        height: 100px;
+        border: none;
+        border-radius: 50%;
+    }
+    
+    #anchor {
+        color: rgb(255, 255, 255);
+        background-color: rgb(27, 44, 65);
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: 4px solid rgb(79, 97, 119) ;
+    }
+    
+    #footer {
+        float: center;
+        color: #ffffff;
+        /* background-color: #3b5264; */
+        background: #7e6be7;
+        text-align: left;
+        padding: 1px;
+        text-decoration: solid rgb(218, 140, 140);
+        font-size: 20px;
+        line-height: 10px;
+        font-weight: bold;
+        border-radius: 4px;
+        box-sizing: border-box;
+        text-shadow: 2px 2px 4px #b81515;
+        font-style: oblique;
+        width: 100%;
+        height: 60%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    caption {
+        color: #ffffff;
+    }
+    
+    @media screen and (max-width: 360px) {
+        body {
+            background-image: linear-gradient(to right, rgba(247, 247, 118, 0.973), rgb(9, 120, 204));
+            font-family: "Trirong", serif;
+            margin: 1px;
+            font-size: small;
+            font-weight: bold;
+        }
+    }
+    
+    @media screen and (max-width: 360px) {
+        .section ul,
+        .section h3 {
+            background-image: linear-gradient(to right, rgba(255, 255, 0, 0), rgb(50, 147, 196));
+            font-family: "Trirong", serif;
+            margin: 2px;
+            font-size: small;
+            font-weight: bold;
+        }
+    }
+    
+    @media screen and (max-width: 360px) {
+        .section p,
+        .section h1,
+        .header h1 {
+            background-image: linear-gradient(to right, rgba(255, 255, 0, 0), rgb(94, 140, 172));
+            font-family: "Trirong", serif;
+            margin: 0;
+            font-size: small;
+            font-weight: bold;
+            color: rgb(15, 15, 15);
+        }
+    }
+    
+    @media screen and (max-width: 360px) {
+        .navbar,
+        .navbar a,
+        .navbar a:hover {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 10%;
+            padding: 3px;
+            font-size: small;
+            float: none;
+        }
+    }
+    
+    @media screen and (max-width: 360px) {
+        #footer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 5%;
+            direction: ltr;
+            font-size: small;
+        }
+    }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    
+    @media screen and (max-width: 360px) {
+        .column {
+            width: 30%;
+            height: auto;
+        }
+    }
+    
+    @media screen and (max-width: 360px) {
+        .socialicons,
+        .socialicons img {
+            width: 100%;
+            height: auto;
+            flex: 70%;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+    
+    @media screen and (max-width: 360px) {
+        .row {
+            width: 100%;
+        }
+    }
+    /* Float four columns side by side */
+.column {
+    float: left;
+    width: 45%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    border: 10px solid rgb(79, 97, 119) ;
+      box-shadow: 10px 10px 8px 10px #80b6e2;
+    padding: 15px;
+    margin-left: 80px;
+    text-align: center;
+    justify-items: center;
+    background-color: #205168;
+  }
+
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+/* For demonstration purposes only: */
+p
+ {     float: center;
+        text-align: center;
+        color: white; 
+     }
+
+
+
